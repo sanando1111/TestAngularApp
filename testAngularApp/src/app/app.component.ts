@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testAngularApp';
+  featureStatus='No feature was added';
+  public onFeatureChanges(event : Event)
+  {
+    console.log("Event triggered");
+    this.featureStatus='Feature has been added';
+  }
 }
