@@ -1,12 +1,2 @@
 <h3>This is server component</h3>
-<div class="container">
-        <div class="row">
-        <div class="col-sm-12">
-         This is an example of two way data binding:   <input type="text" [(ngModel)]="name"/>
-        <p>{{name}}</p>
-        <hr>
-        </div>
-        
-        </div>
-        
-        </div>
+<p [ngStyle]="{backgroundColor:getServerStatusMonitoring()}" *ngFor="let server of serverCount"> Server status is {{serverStatus}} </p>
